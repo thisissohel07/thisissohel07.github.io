@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Sohel - Aspiring AI/ML Developer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for a cleaner look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Style for smooth navigation links */
+        .nav-link:hover {
+            color: #3b82f6; /* Tailwind blue-500 */
+            text-decoration: underline;
+        }
+        /* Custom Button Animation */
+        .primary-btn {
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.5), 0 2px 4px -2px rgba(59, 130, 246, 0.5);
+            transition: all 0.2s ease-in-out;
+        }
+        .primary-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.7), 0 4px 6px -4px rgba(59, 130, 246, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-900 tracking-tight">
+                Shaik Sohel
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link font-medium transition duration-150">About</a>
+                <a href="#certs" class="nav-link font-medium transition duration-150">Certifications</a>
+                <a href="#projects" class="nav-link font-medium transition duration-150">Projects</a>
+                <a href="#contact" class="nav-link font-medium transition duration-150">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button (Hamburger Icon) - Not functional in this simple template -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-gray-900 p-2 rounded-md">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 text-center bg-white rounded-b-xl shadow-lg">
+            <div class="flex flex-col items-center">
+                <!-- Placeholder for Profile Image -->
+                <div class="w-32 h-32 rounded-full bg-blue-100 border-4 border-white shadow-xl flex items-center justify-center mb-6">
+                    <span class="text-4xl font-bold text-blue-600">SS</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                    Hello, I'm <span class="text-blue-600">Shaik Sohel.</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-2 max-w-3xl">
+                    Aspiring <strong>AI/ML Developer</strong> pursuing B.Tech in CSE (AI&ML) at GNI.
+                </p>
+                <p class="text-md text-gray-500 mb-8 max-w-3xl">
+                    Currently in my 2nd year, focusing on Python, Data Science, and fundamental Machine Learning algorithms.
+                </p>
+                <a href="#projects" class="primary-btn bg-blue-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-200">
+                    View My Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Separator -->
+        <div class="h-10"></div>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-white rounded-xl shadow-lg my-10">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-12 border-b-2 border-blue-500 inline-block pb-1 mx-auto">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        I am a 2nd-year B.Tech student in <strong>Computer Science and Engineering with a specialization in Artificial Intelligence & Machine Learning</strong> at Guru Nanak Institutions Technical Campus. My academic focus is on building a strong foundation in core computer science and statistical methods.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I'm passionate about exploring how <strong>data-driven models</strong> can solve complex problems. I actively seek out opportunities to apply learned concepts through personal projects and competitive programming.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">My Core Skills & Stack</h3>
+                    <ul class="grid grid-cols-2 gap-4 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-blue-500 font-bold">»</span> <span>Python (Primary Language)</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-blue-500 font-bold">»</span> <span>Data Structures & Algorithms</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-blue-500 font-bold">»</span> <span>Machine Learning Basics</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-blue-500 font-bold">»</span> <span>Pandas, NumPy, Matplotlib</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-blue-500 font-bold">»</span> <span>SQL & Database Fundamentals</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-blue-500 font-bold">»</span> <span>Git & GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator -->
+        <div class="h-10"></div>
+
+        <!-- Certifications Section (UPDATED) -->
+        <section id="certs" class="py-16 px-4 sm:px-6 lg:px-8 bg-white rounded-xl shadow-lg my-10">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-12 border-b-2 border-blue-500 inline-block pb-1 mx-auto">Education & Certifications</h2>
+            
+            <div class="mb-10">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Formal Education</h3>
+                <div class="border-l-4 border-blue-500 pl-4 py-2">
+                    <p class="text-lg font-bold text-gray-900">B.Tech in CSE (AI & Machine Learning)</p>
+                    <p class="text-md text-gray-600">Guru Nanak Institutions Technical Campus (GNI)</p>
+                    <p class="text-sm text-gray-500">2nd Year (2023 - 2027)</p>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Recent Certifications</h3>
+            
+            <div class="space-y-6">
+                
+                <!-- Cert 1: Generative AI -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 p-4 border border-gray-200 rounded-lg bg-gray-50 hover:bg-gray-100 transition duration-150">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-blue-600 text-3xl font-extrabold">AI</span>
+                        <div>
+                            <p class="text-lg font-semibold text-gray-900">Generative AI for Beginners</p>
+                            <p class="text-md text-gray-700">Great Learning Academy</p>
+                            <p class="text-sm text-gray-500">Completed: September 2024</p>
+                        </div>
+                    </div>
+                    <a href="[LINK_TO_AI_CERTIFICATE_VERIFICATION_OR_PDF]" target="_blank" class="text-sm text-white bg-blue-500 hover:bg-blue-600 font-medium py-2 px-4 rounded-full shadow-md transition duration-200 whitespace-nowrap">
+                        View Certificate &rarr;
+                    </a>
+                </div>
+
+                <!-- Cert 2: Python -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 p-4 border border-gray-200 rounded-lg bg-gray-50 hover:bg-gray-100 transition duration-150">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-blue-600 text-3xl font-extrabold">PY</span>
+                        <div>
+                            <p class="text-lg font-semibold text-gray-900">Python Fundamentals for Beginners</p>
+                            <p class="text-md text-gray-700">Great Learning Academy</p>
+                            <p class="text-sm text-gray-500">Completed: September 2024</p>
+                        </div>
+                    </div>
+                    <a href="[LINK_TO_PYTHON_CERTIFICATE_VERIFICATION_OR_PDF]" target="_blank" class="text-sm text-white bg-blue-500 hover:bg-blue-600 font-medium py-2 px-4 rounded-full shadow-md transition duration-200 whitespace-nowrap">
+                        View Certificate &rarr;
+                    </a>
+                </div>
+                
+                <!-- Cert 3: SQL -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 p-4 border border-gray-200 rounded-lg bg-gray-50 hover:bg-gray-100 transition duration-150">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-blue-600 text-3xl font-extrabold">DB</span>
+                        <div>
+                            <p class="text-lg font-semibold text-gray-900">Master SQL Fundamentals in 90 minutes (Masterclass)</p>
+                            <p class="text-md text-gray-700">WSCube Tech</p>
+                            <p class="text-sm text-gray-500">Completed: September 2024</p>
+                        </div>
+                    </div>
+                    <a href="[LINK_TO_SQL_CERTIFICATE_VERIFICATION_OR_PDF]" target="_blank" class="text-sm text-white bg-blue-500 hover:bg-blue-600 font-medium py-2 px-4 rounded-full shadow-md transition duration-200 whitespace-nowrap">
+                        View Certificate &rarr;
+                    </a>
+                </div>
+                
+            </div>
+            <p class="text-center mt-8 text-sm text-gray-600">
+                Tip: To allow others to view your certificates, upload the PDF files to your GitHub repository (e.g., in a folder named `/certs/`) and link to them using the relative file path.
+            </p>
+        </section>
+
+        <!-- Separator -->
+        <div class="h-10"></div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 my-10">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-12 border-b-2 border-blue-500 inline-block pb-1 mx-auto">Academic & Personal Projects</h2>
+            
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+                
+                <!-- Project Card 1: Classification/Prediction - Placeholder Content -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300 ease-in-out">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 font-semibold">
+                        ML Model Output/Graph Placeholder
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Basic Classification Model</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Implementation of a Logistic Regression/Decision Tree Classifier on a standard dataset (e.g., Iris or Titanic) for binary/multi-class prediction.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Scikit-learn</span>
+                            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">Matplotlib</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="[LINK_TO_JUPYTER_NOTEBOOK]" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                Notebook &rarr;
+                            </a>
+                            <a href="https://github.com/thisissohel07/[GITHUB_REPO_1]" target="_blank" class="text-gray-600 hover:text-gray-900 text-sm">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Data Analysis/Visualization - Placeholder Content -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300 ease-in-out">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 font-semibold">
+                        Data Visualization Dashboard Placeholder
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Exploratory Data Analysis Dashboard</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            A project using Pandas for cleaning and Matplotlib/Seaborn for visualizing trends and insights from a large public dataset.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Pandas</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Seaborn</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">NumPy</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="[LINK_TO_LIVE_DASHBOARD]" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                View Report &rarr;
+                            </a>
+                            <a href="https://github.com/thisissohel07/[GITHUB_REPO_2]" target="_blank" class="text-gray-600 hover:text-gray-900 text-sm">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Core CS/Utility Tool - Placeholder Content -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300 ease-in-out">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 font-semibold">
+                        Terminal/Code Screenshot Placeholder
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">DSA Algorithm Implementation</h3>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            A collection of efficient implementations of core Data Structures (e.g., Linked Lists, Stacks) or sorting/searching algorithms in Python/C++.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">C++ / Python</span>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full">DSA</span>
+                            <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full">GitHub</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="[LINK_TO_CODE_DEMO]" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                                Code Snippets &rarr;
+                            </a>
+                            <a href="https://github.com/thisissohel07/[GITHUB_REPO_3]" target="_blank" class="text-gray-600 hover:text-gray-900 text-sm">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600 text-white rounded-xl shadow-2xl my-10">
+            <h2 class="text-4xl font-bold text-center mb-10">Let's Connect</h2>
+            <p class="text-lg text-center mb-10 max-w-xl mx-auto opacity-90">
+                I'm open to collaborations on interesting AI/ML or open-source projects. Feel free to connect!
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                
+                <!-- Email Link -->
+                <a href="mailto:thisissohel07@gmail.com" class="bg-white text-blue-600 font-semibold py-3 px-6 rounded-full primary-btn shadow-lg hover:bg-gray-100 transition duration-200">
+                    Email Me
+                </a>
+
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/shaiksohel07" target="_blank" class="bg-blue-800 text-white font-semibold py-3 px-6 rounded-full primary-btn shadow-lg hover:bg-blue-900 transition duration-200 flex items-center space-x-2">
+                    <!-- LinkedIn Icon SVG (Simplified) -->
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.481c0-1.309-.024-2.99-1.824-2.99-1.825 0-2.109 1.409-2.109 2.911v5.55h-3.555V9.456h3.414v1.561h.046c.477-.9 1.637-1.825 3.37-1.825 3.619 0 4.285 2.368 4.285 5.457v6.286zM5.337 7.747c-1.892 0-3.43-1.538-3.43-3.43 0-1.893 1.538-3.43 3.43-3.43s3.43 1.537 3.43 3.43c0 1.892-1.538 3.43-3.43 3.43zm-1.785 12.705L7.123 9.456H3.568l.001 13.018h3.555V9.456H3.552z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            
+            <!-- Secondary Social Links -->
+            <div class="flex justify-center space-x-6 mt-8">
+                <!-- GitHub Link -->
+                <a href="https://github.com/thisissohel07" target="_blank" class="text-white hover:text-gray-300 transition duration-200 text-sm flex items-center space-x-1">
+                    <!-- GitHub Icon SVG -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.418 2.868 8.136 6.83 9.493.5.092.682-.218.682-.482 0-.237-.009-.863-.014-1.695-2.78.603-3.376-1.34-3.376-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.068-.608.068-.608 1.007.07 1.532 1.03 1.532 1.03.89 1.528 2.338 1.085 2.906.828.092-.643.348-1.085.634-1.336-2.227-.253-4.568-1.115-4.568-4.945 0-1.088.389-1.98.03-2.677-.091-.643-.284-1.522.089-2.66 0 0 .736-.219 2.417 1.025.7-.193 1.453-.292 2.203-.296.75.004 1.503.103 2.203.296 1.68-1.244 2.414-1.025 2.414-1.025.373 1.138.18 2.017.089 2.66.356.697.03 1.589.03 2.677 0 3.839-2.345 4.686-4.58 4.939-.356.308-.67.925-.67 1.868 0 1.348.007 2.433.007 2.76 0 .267.18.577.688.484C19.141 20.142 22 16.424 22 12.017 22 6.484 17.523 2 12 2z" clip-rule="evenodd" />
+                    </svg>
+                    <span>GitHub: @thisissohel07</span>
+                </a>
+                
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/thisissohel07" target="_blank" class="text-white hover:text-gray-300 transition duration-200 text-sm flex items-center space-x-1">
+                    <!-- Instagram Icon SVG (Simplified) -->
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.49-11.85c-.06 0-.12.01-.18.02a.66.66 0 0 0-.18.06c-.05.04-.1.08-.14.12a.66.66 0 0 0-.08.19c-.01.07-.02.13-.02.2v6.62c0 .06.01.12.02.18a.66.66 0 0 0 .06.18c.04.05.08.1.12.14a.66.66 0 0 0 .19.08c.07.01.13.02.2.02h2.52c.06 0 .12-.01.18-.02a.66.66 0 0 0 .18-.06c.05-.04.1-.08.14-.12a.66.66 0 0 0 .08-.19c.01-.07.02-.13.02-.2V8.15c0-.06-.01-.12-.02-.18a.66.66 0 0 0-.06-.18c-.04-.05-.08-.1-.12-.14a.66.66 0 0 0-.19-.08c-.07-.01-.13-.02-.2-.02H16.49zm-.06 1.87h2.64v5.62h-2.64V8.15zM12 9.4c1.17 0 2.1.93 2.1 2.1s-.93 2.1-2.1 2.1-2.1-.93-2.1-2.1.93-2.1 2.1-2.1zm0 4c1.05 0 1.9-.85 1.9-1.9s-.85-1.9-1.9-1.9-1.9.85-1.9 1.9.85 1.9 1.9 1.9zm-4.39-3.95c-.06 0-.12.01-.18.02a.66.66 0 0 0-.18.06c-.05.04-.1.08-.14.12a.66.66 0 0 0-.08.19c-.01.07-.02.13-.02.2v6.62c0 .06.01.12.02.18a.66.66 0 0 0 .06.18c.04.05.08.1.12.14a.66.66 0 0 0 .19.08c.07.01.13.02.2.02h2.52c.06 0 .12-.01.18-.02a.66.66 0 0 0 .18-.06c.05-.04.1-.08.14-.12a.66.66 0 0 0 .08-.19c.01-.07.02-.13.02-.2V8.15c0-.06-.01-.12-.02-.18a.66.66 0 0 0-.06-.18c-.04-.05-.08-.1-.12-.14a.66.66 0 0 0-.19-.08c-.07-.01-.13-.02-.2-.02H7.61zm-.06 1.87h2.64v5.62H7.55V8.15z"/>
+                    </svg>
+                    <span>Instagram: @thisissohel07</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; <span id="current-year"></span> Shaik Sohel. All rights reserved. | Built with HTML & Tailwind CSS.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Simple JavaScript for smooth scrolling (using the CSS scroll-behavior property)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Only prevent default if the target is a valid section ID
+                const targetId = this.getAttribute('href');
+                if (document.querySelector(targetId)) {
+                    e.preventDefault();
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
